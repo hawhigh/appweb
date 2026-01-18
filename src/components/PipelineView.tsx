@@ -83,15 +83,16 @@ export function PipelineView() {
                 type="Task"
             />
 
-            .agent-tag {
-                font - size: 0.7rem;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
+            <style>{`
+                .agent-tag {
+                    font-size: 0.7rem;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    letter-spacing: 0.5px;
                 }
-            .agent-tag.analyst {color: #0ea5e9; }
-            .agent-tag.creator {color: #db2777; }
-            .agent-tag.strategist {color: var(--primary); }
+                .agent-tag.analyst { color: #0ea5e9; }
+                .agent-tag.creator { color: #db2777; }
+                .agent-tag.strategist { color: var(--primary); }
             `}</style>
         </div >
     );
