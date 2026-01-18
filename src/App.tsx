@@ -61,7 +61,7 @@ function App() {
   return (
     <div className="app-shell">
       <nav className="sidebar">
-        <div className="logo">AgencyOS</div>
+        <div className="logo">Vault</div>
 
         <div className="nav-links">
           {visibleNav.map((item) => (
