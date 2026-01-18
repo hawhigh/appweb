@@ -23,10 +23,10 @@ export function PipelineView() {
     };
 
     const statusColors: Record<string, string> = {
-        'Backlog': '#555',
-        'In Progress': '#d4a017', // Gold/Dark Yellow
+        'Backlog': '#444',
+        'In Progress': 'var(--primary)',
         'Testing': '#1e90ff',
-        'Live': '#00c853'
+        'Live': 'var(--accent)'
     };
 
     return (
@@ -56,7 +56,10 @@ export function PipelineView() {
                                 <select
                                     value={item.status}
                                     onChange={(e) => { store.updatePipelineItem(item.id, { status: e.target.value as any }); refresh(); }}
-                                    style={{ color: statusColors[item.status] || '#fff', fontWeight: 'bold' }}
+                                    style={{
+                                        color: statusColors[item.status] || '#fff',
+                                        fontWeight: '800',
+                                    }}
                                 >
                                     <option>Backlog</option>
                                     <option>In Progress</option>
@@ -80,21 +83,16 @@ export function PipelineView() {
                 type="Task"
             />
 
-            <style>{`
-                .primary-btn {
-                    background: #2563eb;
-                    color: white;
-                    border: none;
-                    padding: 0.5rem 1rem;
-                    border-radius: 6px;
-                    font-weight: 600;
-                    cursor: pointer;
-                    display: flex;
-                    align-items: center;
-                    gap: 0.5rem;
+            .agent-tag {
+                font - size: 0.7rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
                 }
-                .primary-btn:hover { background: #1d4ed8; }
+            .agent-tag.analyst {color: #0ea5e9; }
+            .agent-tag.creator {color: #db2777; }
+            .agent-tag.strategist {color: var(--primary); }
             `}</style>
-        </div>
+        </div >
     );
 }

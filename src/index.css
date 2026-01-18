@@ -1,35 +1,38 @@
 :root {
-  /* COSMIC GLASS PALETTE */
-  --bg-deep: #0b1120;
-  /* Darkest Void */
-  --bg-surface: #1e293b;
-  /* Slate Surface */
-  --bg-glass: rgba(30, 41, 59, 0.7);
-  /* Glassy Surface */
+  /* VELVET OBSIDIAN & GOLD PALETTE */
+  --bg-deep: #050505;
+  /* Velvet Void */
+  --bg-surface: #111111;
+  /* Obsidian Surface */
+  --bg-glass: rgba(10, 10, 10, 0.75);
+  /* Tinted Obsidian Glass */
 
-  --primary: #6366f1;
-  /* Indigo Neon */
-  --primary-glow: rgba(99, 102, 241, 0.4);
+  --primary: #D4AF37;
+  /* Metallic Gold */
+  --primary-glow: rgba(212, 175, 55, 0.3);
+  --primary-dim: #996515;
 
-  --accent: #10b981;
-  /* Emerald Neon */
-  --accent-glow: rgba(16, 185, 129, 0.4);
+  --accent: #E5E7EB;
+  /* Silver/Grey Accent */
+  --accent-glow: rgba(229, 231, 235, 0.2);
 
-  --text-main: #f8fafc;
-  --text-muted: #94a3b8;
+  --text-main: #FFFFFF;
+  --text-muted: #888888;
+  --text-dim: #444444;
 
-  --border-glass: rgba(255, 255, 255, 0.1);
-  --border-active: rgba(99, 102, 241, 0.5);
+  --border-glass: rgba(212, 175, 55, 0.15);
+  --border-active: rgba(212, 175, 55, 0.5);
 
   /* Spacing & Radius */
-  --radius-lg: 16px;
-  --radius-md: 12px;
-  --radius-sm: 8px;
+  --radius-lg: 12px;
+  --radius-md: 8px;
+  --radius-sm: 4px;
 
   /* Effects */
-  --glass-blur: blur(12px);
-  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
-  --shadow-glow: 0 0 15px var(--primary-glow);
+  --glass-blur: blur(20px);
+  --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+  --shadow-glow: 0 0 20px var(--primary-glow);
+  --gold-gradient: linear-gradient(135deg, #FFD700 0%, #D4AF37 50%, #B8860B 100%);
 }
 
 body {
@@ -42,8 +45,8 @@ body {
   min-height: 100vh;
   /* Subtle Gradient Background */
   background-image:
-    radial-gradient(circle at 10% 10%, rgba(99, 102, 241, 0.08) 0%, transparent 40%),
-    radial-gradient(circle at 90% 90%, rgba(16, 185, 129, 0.05) 0%, transparent 40%);
+    radial-gradient(circle at 0% 0%, rgba(212, 175, 55, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 100% 100%, rgba(212, 175, 55, 0.03) 0%, transparent 50%);
   background-attachment: fixed;
 }
 
